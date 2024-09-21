@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-yellow {
+  @apply border-2 border-yellow_dark py-5 px-10;
+}
+.border-yellow-tb {
+  @apply border-yellow_dark border-t border-b;
+}
+.border-white-tb {
+  @apply border-offWhiteText  border-t border-b;
+}
+.heading {
+  @apply font-JosefinSans text-xl font-normal;
+}
+.para {
+  @apply font-JosefinSans text-xl font-normal;
+}
