@@ -18,6 +18,7 @@ module.exports = {
       offWhiteText2: '#B29A90',
       dottedColor: '#AAAAAA',
       hrColor: '#797E89',
+      hrColor2: '#797E89',
     },
     extend: {},
   },

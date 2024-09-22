@@ -6,7 +6,7 @@
   @apply border-2 border-yellow_dark py-5 px-10;
 }
 .border-yellow-tb {
-  @apply border-yellow_dark border-t border-b uppercase font-JosefinSans font-medium leading-3 py-1 w-fit;
+  @apply border-yellow_dark border-t border-b uppercase font-JosefinSans font-medium leading-3 py-2 w-fit;
 }
 .border-white-tb {
   @apply border-offWhiteText  border-t border-b;
