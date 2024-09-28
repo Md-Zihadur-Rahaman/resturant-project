@@ -27,7 +27,7 @@
     <section class="bg-black_dark">
       <!-- header part -->
       <header
-        class="py-16 max-w-7xl mx-auto flex justify-items-center items-center justify-between"
+        class="py-16 max-w-7xl mx-auto hidden lg:flex justify-items-center items-center justify-between"
       >
         <div>
           <p
@@ -54,7 +54,10 @@
         <nav
           class="max-w-7xl mx-auto text-whiteText text-xl flex justify-between justify-items-center items-center py-7"
         >
-          <ul class="flex gap-14">
+          <figure class="block lg:hidden">
+            <img src="images/hamburger.png" alt="" />
+          </figure>
+          <ul class="hidden lg:flex gap-14">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Menu</a></li>
@@ -73,27 +76,41 @@
           </figure>
         </nav>
       </section>
-      <!-- welcome  section -->
+    </section>
+
+    <!-- welcome section -->
+    <section class="bg-black_dark">
+      <!-- welcome  section container -->
       <section
-        class="flex justify-between items-center max-w-7xl mx-auto gap-10 pt-4 relative"
+        class="flex flex-col lg:flex-row max-w-7xl mx-auto lg:gap-10 gap-5 lg:h-[600px]"
       >
-        <div class="text-whiteText flex flex-col gap-8">
-          <h1 class="font-CormorantInfant font-bold text-8xl">
+        <div
+          class="w-full p-4 lg:p-0 lg:w-1/2 text-whiteText flex flex-col justify-center items-center lg:items-start lg:gap-4"
+        >
+          <h1
+            class="font-CormorantInfant font-bold text-3xl lg:text-8xl text-center lg:text-left"
+          >
             Welcome to Restaurantate
           </h1>
-          <p class="para">
+          <p class="para text-center lg:text-left">
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy .
           </p>
           <a
-            class="w-5/12 text-xl text-whiteText font-JosefinSans text-center font-normal border-yellow"
+            class="w-8/12 lg:w-5/12 text-sm lg:text-xl text-whiteText font-JosefinSans text-center font-normal border-yellow"
             href="#"
             >View Menu</a
           >
         </div>
-        <div></div>
-        <figure>
-          <img src="images/BannerImage.svg" alt="" />
+
+        <figure
+          class="flex items-center p-4 lg:p-0 lg:h-full lg:w-1/2 lg:relative"
+        >
+          <img
+            src="images/BannerImage.svg"
+            alt=""
+            class="lg:absolute lg:h-[800px] lg:left-20 lg:-bottom-48"
+          />
         </figure>
       </section>
     </section>
@@ -101,67 +118,78 @@
     <!-- about section -->
     <section class="bg-cream">
       <!-- about section container -->
-      <div class="max-w-7xl mx-auto py-40 flex justify-betweent gap-14">
+      <div
+        class="max-w-7xl mx-auto lg:py-40 flex flex-col lg:flex-row justify-betweent gap-10 p-4"
+      >
         <!-- locate us -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <figure
             class="bg-black_dark w-20 h-20 rounded-full flex justify-center items-center"
           >
             <img src="images/Location.svg" alt="" />
           </figure>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col items-center lg:items-start gap-4">
             <h1 class="font-CormorantInfant font-bold text-3xl leading-6">
               Locate Us
             </h1>
-            <p class="text-xl font-JosefinSans leading-6">
+            <p
+              class="text-xl text-center lg:text-left font-JosefinSans leading-6"
+            >
               Riverside 25, San Francisco, California
             </p>
           </div>
         </div>
         <!-- Open Hours -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <figure
             class="bg-black_dark w-20 h-20 rounded-full flex justify-center items-center"
           >
             <img src="images/clock.svg" alt="" />
           </figure>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col items-center lg:items-start gap-4">
             <h1 class="font-CormorantInfant font-bold text-3xl leading-6">
               Open Hours
             </h1>
-            <p class="text-xl font-JosefinSans leading-6">
+            <p
+              class="text-xl text-center lg:text-left font-JosefinSans leading-6"
+            >
               Mon To Fri 9:00 AM - 9:00 PM
             </p>
           </div>
         </div>
 
         <!-- Reservation-->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <figure
             class="bg-black_dark w-20 h-20 rounded-full flex justify-center items-center"
           >
             <img src="images/Reserve.svg" alt="" />
           </figure>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col items-center lg:items-start gap-4">
             <h1 class="font-CormorantInfant font-bold text-3xl leading-6">
               Reservation
             </h1>
-            <p class="text-xl font-JosefinSans leading-6">
+            <p
+              class="text-xl text-center lg:text-left font-JosefinSans leading-6"
+            >
               hirestaurantate@gmail.com
             </p>
           </div>
         </div>
       </div>
-
       <!-- Story section  -->
-      <section class="max-w-7xl mx-auto flex gap-10 pb-40">
+      <section
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:pb-40 pb-5"
+      >
         <!-- image section -->
-        <figure class="w-6/12">
+        <figure class="w-full lg:w-6/12 p-4 lg:p-0">
           <img src="images/Resturant-table-image.svg" alt="" />
         </figure>
 
         <!-- story section -->
-        <div class="w-6/12 pl-10 border-l border-l-offWhiteText2 space-y-5">
+        <div
+          class="w-full text-center lg:text-left lg:w-6/12 lg:pl-10 lg:border-l lg:border-l-offWhiteText2 space-y-4 p-4"
+        >
           <h1 class="font-CormorantInfant font-bold text-4xl leading-6">
             The Story
           </h1>
@@ -170,8 +198,8 @@
             letters, as opposed to using 'Content here, content gfshere',
             makinlook like readable English. Many desktop publishing packages.
           </p>
-          <div class="flex gap-4">
-            <div class="space-y-5">
+          <div class="flex flex-col lg:flex-row gap-3">
+            <div class="space-y-4">
               <h1 class="font-CormorantInfant font-bold text-4xl leading-6">
                 1996
               </h1>
@@ -179,7 +207,7 @@
                 Lorem Ipsum is that it has a more-or-less normal distribution
               </p>
             </div>
-            <div class="space-y-5">
+            <div class="space-y-4">
               <h1 class="font-CormorantInfant font-bold text-4xl leading-6">
                 2021
               </h1>
@@ -188,18 +216,20 @@
               </p>
             </div>
           </div>
-          <p class="text-xl font-JosefinSans leading-6">JOSEFINE</p>
-          <img src="images/Josefine.svg" alt="" />
+          <div class="flex flex-col gap-2 items-center lg:items-start">
+            <p class="text-xl font-JosefinSans leading-6">JOSEFINE</p>
+            <img src="images/Josefine.svg" alt="" class="" />
+          </div>
         </div>
       </section>
     </section>
 
     <!--  Special Offer Section -->
-    <section class="max-w-7xl mx-auto flex gap-20 my-20">
-      <aside class="w-4/12 flex flex-col space-y-5">
+    <section class="max-w-7xl mx-auto flex lg:flex-row flex-col gap-20 my-20">
+      <aside class="w-full lg:w-4/12 flex flex-col space-y-5 p-4 lg:p-0">
         <p class="border-yellow-tb">Menu</p>
 
-        <h1 class="font-CormorantInfant font-bold text-4xl leading-6">
+        <h1 class="font-CormorantInfant font-bold text-4xl">
           Try Our Special Offers
         </h1>
         <p class="text-xl font-JosefinSans leading-6">
@@ -209,17 +239,17 @@
         </p>
         <img src="images/food-image.svg" alt="" class="mt-10" />
         <a
-          class="w-8/12 text-xl text-yellow_dark font-JosefinSans text-center font-medium border-yellow mt-10"
+          class="w-full lg:w-8/12 text-xl text-yellow_dark font-JosefinSans text-center font-medium border-yellow mt-10"
           href="#"
           >See all dishes</a
         >
       </aside>
-      <main class="w-8/12 mt-10 space-y-10">
+      <main class="w-full lg:w-8/12 mt-10 space-y-10 p-4 lg:p-0">
         <h1 class="font-CormorantInfant font-bold text-4xl leading-6">
           Starters
         </h1>
         <!-- Starters 1 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/starters-1.svg"
             alt=""
@@ -241,7 +271,7 @@
         </div>
 
         <!-- Starters 2 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/starters-2.svg"
             alt=""
@@ -263,7 +293,7 @@
         </div>
 
         <!-- Starters 3 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/starters-3.svg"
             alt=""
@@ -285,7 +315,7 @@
         </div>
 
         <!-- Starters 4 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/starters-4.svg"
             alt=""
@@ -310,7 +340,7 @@
           Main Dish
         </h1>
         <!-- Main Dish 1 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/MainDish-1.svg"
             alt=""
@@ -332,7 +362,7 @@
         </div>
 
         <!-- Main Dish 2 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/MainDish-2.svg"
             alt=""
@@ -353,7 +383,7 @@
           </div>
         </div>
         <!-- Main Dish 3 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/MainDish-3.svg"
             alt=""
@@ -375,7 +405,7 @@
         </div>
 
         <!-- Main Dish 4 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/MainDish-4.svg"
             alt=""
@@ -400,7 +430,7 @@
           Dessert
         </h1>
         <!-- Dessert 1 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/Dessert-1.svg"
             alt=""
@@ -422,7 +452,7 @@
         </div>
 
         <!-- Dessert 2 -->
-        <div class="flex justify-start items-center gap-4">
+        <div class="flex flex-col lg:flex-row justify-start items-center gap-4">
           <img
             src="images/Dessert-2.svg"
             alt=""
@@ -449,7 +479,7 @@
     <section class="bg-black_dark">
       <!-- testimonial container -->
       <main class="max-w-7xl mx-auto">
-        <div class="pt-20 pb-5 space-y-5">
+        <div class="p-4 lg:pt-20 lg:pb-5 space-y-5">
           <p class="border-yellow-tb text-whiteText">Testimonial</p>
 
           <h1
@@ -463,7 +493,7 @@
           </p>
         </div>
         <!-- testimonial from client -->
-        <section class="grid grid-cols-12 gap-8 py-8">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:py-8 p-4">
           <!-- client 1 -->
           <div class="p-12 space-y-8 bg-black_modified col-span-4">
             <!-- client photo and name -->
@@ -476,11 +506,11 @@
 
               <div class="flex flex-col gap-3">
                 <h1
-                  class="font-CormorantInfant font-bold text-3xl leading-6 text-whiteText"
+                  class="font-CormorantInfant font-bold text-xl lg:text-3xl text-whiteText"
                 >
                   Daniyal Sppra
                 </h1>
-                <p class="text-xl font-JosefinSans leading-6 text-yellow_dark">
+                <p class="text-xs lg:text-xl font-JosefinSans text-yellow_dark">
                   Newyork
                 </p>
               </div>
@@ -507,11 +537,11 @@
 
               <div class="flex flex-col gap-3">
                 <h1
-                  class="font-CormorantInfant font-bold text-3xl leading-6 text-whiteText"
+                  class="font-CormorantInfant font-bold text-xl lg:text-3xl text-whiteText"
                 >
                   Natasha D
                 </h1>
-                <p class="text-xl font-JosefinSans leading-6 text-yellow_dark">
+                <p class="text-xs lg:text-xl font-JosefinSans text-yellow_dark">
                   Salt Lake City
                 </p>
               </div>
@@ -537,11 +567,11 @@
 
               <div class="flex flex-col gap-3">
                 <h1
-                  class="font-CormorantInfant font-bold text-3xl leading-6 text-whiteText"
+                  class="font-CormorantInfant font-bold text-xl lg:text-3xl text-whiteText"
                 >
                   Jack Sparrow
                 </h1>
-                <p class="text-xl font-JosefinSans leading-6 text-yellow_dark">
+                <p class="text-xs lg:text-xl font-JosefinSans text-yellow_dark">
                   San Diego
                 </p>
               </div>
@@ -563,52 +593,50 @@
       </main>
     </section>
     <!-- testimonial image -->
-    <section class="max-w-7xl mx-auto">
-      <figure>
-        <img src="images/testimonial.svg" alt="" />
-      </figure>
+    <section class="testimonial">
+      <!-- <figure class=""><img src="images/testimonial.svg" alt=""></figure> -->
     </section>
     <!-- Our special dish section -->
     <section class="max-w-7xl mx-auto space-y-10 mt-20 mb-10">
       <div
-        class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-6"
+        class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-6 p-4 lg:p-0"
       >
         <p class="border-yellow-tb">OFFER</p>
         <h1
-          class="font-CormorantInfant font-bold text-4xl leading-6 text-center"
+          class="font-CormorantInfant font-bold text-2xl lg:text-4xl text-center"
         >
           Try Our Special Offers
         </h1>
-        <p class="text-xl font-JosefinSans leading-6 text-center">
+        <p class="text-base lg:text-xl font-JosefinSans text-center">
           Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, as opposed to using 'Content here, content making.
         </p>
       </div>
 
-      <div class="flex justify-center gap-10">
+      <div class="flex flex-col lg:flex-row justify-center gap-10 p-4 lg:p-0">
         <figure><img src="images/Offer-1.svg" alt="" /></figure>
         <figure><img src="images/Offer-2.svg" alt="" /></figure>
       </div>
     </section>
 
     <!-- Popular dish section -->
-    <section class="max-w-7xl mx-auto space-y-10 mt-20 mb-10">
+    <section class="max-w-7xl mx-auto space-y-10 mt-20 mb-40">
       <div
-        class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-6"
+        class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-6 p-4 lg:p-0"
       >
         <p class="border-yellow-tb">menu</p>
         <h1
-          class="font-CormorantInfant font-bold text-4xl leading-6 text-center"
+          class="font-CormorantInfant font-bold text-2xl lg:text-4xl leading-6 text-center"
         >
           Popular Dishes
         </h1>
-        <p class="text-xl font-JosefinSans leading-6 text-center">
+        <p class="text-xs lg:text-xl font-JosefinSans leading-6 text-center">
           Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, as opposed to using 'Content here, content making.
         </p>
       </div>
       <!-- item list -->
-      <section class="grid grid-cols-12 gap-4">
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-4 p-4 lg:p-0">
         <!-- Item 1 -->
         <div class="col-span-3 space-y-5">
           <figure><img src="images/PopularDishes-1.svg" alt="" /></figure>
@@ -675,5 +703,282 @@
         >
       </div>
     </section>
+
+    <!-- Our Great Services sections -->
+    <section class="bg-black_dark">
+      <main class="max-w-7xl mx-auto py-44 flex flex-col lg:flex-row gap-8">
+        <!-- text content -->
+
+        <aside class="w-full lg:w-4/12 space-y-5 p-4 lg:p-0">
+          <p class="border-yellow-tb text-whiteText">What we offer</p>
+
+          <h1
+            class="font-CormorantInfant font-bold text-2xl lg:text-4xl text-whiteText"
+          >
+            Our Great Services
+          </h1>
+          <p class="text-xs lg:text-xl font-JosefinSans text-whiteText">
+            Lorem Ipsum is that it has a more-or-less normal distribution
+            content making it look like readable English.
+          </p>
+        </aside>
+
+        <!-- Offer -->
+        <section
+          class="w-full lg:w-8/12 flex flex-col lg:flex-row gap-3 p-4 lg:p-0"
+        >
+          <!-- Opened 24/7 -->
+          <div
+            class="w-full lg:w-4/12 flex flex-col justify-center items-center gap-5 p-10 border-[16px] border-black_modified"
+          >
+            <figure><img src="images/calender-Icon.svg" alt="" /></figure>
+
+            <p class="font-CormorantInfant font-bold text-2xl text-whiteText">
+              Opened 24/7
+            </p>
+          </div>
+
+          <!-- Special Menus -->
+          <div
+            class="w-full lg:w-4/12 flex flex-col justify-center items-center gap-5 p-10 border-[16px] border-black_modified"
+          >
+            <figure><img src="images/menu-Icon.svg" alt="" /></figure>
+
+            <p class="font-CormorantInfant font-bold text-2xl text-whiteText">
+              Special Menus
+            </p>
+          </div>
+
+          <!--Home Delivery -->
+          <div
+            class="w-full lg:w-4/12 flex flex-col justify-center items-center gap-5 p-10 border-[16px] border-black_modified"
+          >
+            <figure><img src="images/delivery-Icon.svg" alt="" /></figure>
+
+            <p class="font-CormorantInfant font-bold text-2xl text-whiteText">
+              Home Delivery
+            </p>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <!-- blog section -->
+    <section class="my-40 max-w-7xl mx-auto">
+      <!-- text content -->
+      <div
+        class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-6 my-10 p-4 lg:p-0"
+      >
+        <p class="border-yellow-tb">Blog</p>
+        <h1
+          class="font-CormorantInfant font-bold text-2xl lg:text-4xl text-center"
+        >
+          Be First Who Read News
+        </h1>
+        <p class="text-xs lg:text-xl font-JosefinSans text-center">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content making.
+        </p>
+      </div>
+      <main class="flex flex-col lg:flex-row gap-8">
+        <!-- Mediterranean Cuisine -->
+        <div class="w-full lg:w-6/12 p-4 lg:p-0">
+          <img src="images/MediterraneanCuisine.svg" alt="" />
+          <article class="space-y-5 border border-black_light p-10">
+            <div class="flex gap-4">
+              <p class="border-yellow-tb text-black_dark">Restaurants</p>
+              <p class="border-yellow-tb text-black_dark">Feb 22, 2022</p>
+            </div>
+
+            <h1
+              class="font-CormorantInfant font-bold text-2xl lg:text-4xl text-black_dark"
+            >
+              The Most Popular Delicious Food Of Mediterranean Cuisine
+            </h1>
+            <p class="text-xs lg:text-xl font-JosefinSanstext-black_dark">
+              Capitalize on low-hanging fruit to identify a ballpark value added
+              matrix economically and the creative activity to beta test
+              override the food quality.
+            </p>
+          </article>
+        </div>
+        <!--  Elegant Dessert -->
+        <div class="w-full lg:w-6/12 p-4 lg:p-0">
+          <img src="images/Elegant-Dessert.svg" alt="" />
+          <article class="space-y-5 border border-black_light p-10">
+            <div class="flex gap-4">
+              <p class="border-yellow-tb text-black_dark">Restaurants</p>
+              <p class="border-yellow-tb text-black_dark">Feb 22, 2022</p>
+            </div>
+
+            <h1
+              class="font-CormorantInfant font-bold text-2xl lg:text-4xl text-black_dark"
+            >
+              Elegant Dessert: 10 Tips How to Make It at Home
+            </h1>
+            <p class="text-xs lg:text-xl font-JosefinSans text-black_dark">
+              Capitalize on low-hanging fruit to identify a ballpark value added
+              matrix economically and the creative activity to beta test
+              override the food quality.
+            </p>
+          </article>
+        </div>
+      </main>
+    </section>
+
+    <!-- reservation section -->
+
+    <section class="flex items-center justify-center reservation">
+      <main class="max-w-5xl mx-auto p-28 bg-black_dark/95">
+        <!-- text content -->
+        <div
+          class="max-w-3xl mx-auto flex flex-col justify-center items-center space-y-8 my-6 p-4 lg:p-0"
+        >
+          <p class="border-yellow-tb text-whiteText">Reservation</p>
+          <h1
+            class="font-CormorantInfant font-bold text-2xl lg:text-4xl leading-6 text-center text-whiteText"
+          >
+            Book your table now
+          </h1>
+        </div>
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 p-4 lg:p-0">
+          <input
+            type="text"
+            placeholder="Name"
+            class="col-span-6 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="col-span-6 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+          />
+          <input
+            type="number"
+            placeholder="Person"
+            class="col-span-6 lg:col-span-4 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+          />
+          <input
+            type="time"
+            placeholder="Timing"
+            class="col-span-6 lg:col-span-4 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+          />
+          <input
+            type="date"
+            placeholder="Date"
+            class="col-span-6 lg:col-span-4 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+          />
+        </section>
+        <div class="text-center my-14">
+          <a
+            class="text-xl bg-whiteText text-black_dark font-JosefinSans text-center font-medium py-5 px-12"
+            href="#"
+            >Book a Table</a
+          >
+        </div>
+      </main>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black_dark">
+      <!-- footer icon section -->
+      <section
+        class="lg:py-16 max-w-7xl mx-auto flex flex-col lg:flex-row justify-items-center items-center justify-between p-4 gap-5"
+      >
+        <div>
+          <a
+            href="#"
+            class="text-xl text-whiteText font-JosefinSans text-center font-medium underline"
+          >
+            Instagram Feed
+          </a>
+        </div>
+
+        <figure class="p-4 lg:p-0">
+          <img class="w-96 h-48" src="images/Logo.svg" alt="" />
+        </figure>
+        <!-- social icon -->
+        <figure class="flex gap-4">
+          <a href="#"> <img src="images/Insta.svg" alt="" /></a>
+          <a href="#"> <img src="images/facebook.svg" alt="" /></a>
+
+          <a href="#"> <img src="images/twitter.svg" alt="" /></a>
+          <a href="#"><img src="images/Pintrest.svg" alt="" /></a>
+        </figure>
+      </section>
+      <!-- footer contact and information -->
+      <section
+        class="flex flex-col lg:flex-row gap-10 max-w-7xl mx-auto p-4 lg:py-8"
+      >
+        <div
+          class="w-full lg:w-3/12 space-y-3 flex flex-col items-start p-4 lg:p-0"
+        >
+          <p class="my-3 border-yellow-tb text-whiteText">CONTACT</p>
+
+          <p class="text-xl font-JosefinSans leading-6 text-whiteText">
+            5 Rue Dalou, 75015 Paris
+          </p>
+          <p class="text-xl font-JosefinSans leading-6 text-whiteText">
+            <span class="text-yellow_dark">Call</span> - +33 156 78 89 56
+          </p>
+          <p class="text-xl font-JosefinSans leading-6 text-yellow_dark">
+            benoit@mail.com
+          </p>
+        </div>
+        <div class="w-full lg:w-6/12 flex flex-col justify-between gap-4">
+          <div class="flex justify-center">
+            <p
+              class="w-3/4 text-center text-xl font-JosefinSans leading-6 text-whiteText"
+            >
+              Join our mailing list for updates, Get news & offers events.
+            </p>
+          </div>
+
+          <div class="w-full flex gap-0">
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-9/12 bg-black_dark/95 outline-none border border-black_light p-5 text-whiteText"
+            />
+            <a
+              class="text-xl bg-whiteText text-black_dark font-JosefinSans text-center font-medium p-6 border border-whiteText"
+              href="#"
+              >Subscribe</a
+            >
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-3/12 space-y-3 flex flex-col items-start lg:items-end"
+        >
+          <p class="my-3 border-yellow-tb text-whiteText">Working Hours</p>
+
+          <p class="text-xl font-JosefinSans leading-6 text-whiteText">
+            <span class="text-yellow_dark">Mon - Fri</span>: 07.00am - 06.00pm
+          </p>
+
+          <p class="text-xl font-JosefinSans leading-6 text-whiteText">
+            <span class="text-yellow_dark">Sat</span>: 07.00am - 06.00pm
+          </p>
+
+          <p class="text-xl font-JosefinSans leading-6 text-whiteText">
+            <span class="text-yellow_dark">Sun</span>: 08.00am - 06.00pm
+          </p>
+        </div>
+      </section>
+      <!-- footer copy right section -->
+      <section class="border-white-tb">
+        <div
+          class="max-w-7xl mx-auto text-whiteText text-xs text-center lg:text-left lg:text-xl font-JosefinSans flex justify-between justify-items-center items-center py-7"
+        >
+          <p>
+            &#169; Copyright - Restaurantate | Designed by
+            <span class="text-yellow_dark"> <a href="#">VictorFlow</a></span>
+            Templates - Powered by
+            <span class="text-yellow_dark"> <a href="#">Webflow</a></span>
+          </p>
+          <p class="hidden lg:block">Styleguide / Licenses</p>
+        </div>
+      </section>
+      <section class="py-10"></section>
+    </footer>
   </body>
 </html>

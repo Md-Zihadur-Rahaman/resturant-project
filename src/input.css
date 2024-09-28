@@ -6,7 +6,7 @@
   @apply border-2 border-yellow_dark py-5 px-10;
 }
 .border-yellow-tb {
-  @apply border-yellow_dark border-t border-b uppercase font-JosefinSans font-medium leading-3 py-2 w-fit;
+  @apply border-yellow_dark border-t border-b uppercase font-JosefinSans font-medium leading-3 py-2 w-fit text-xs lg:text-base;
 }
 .border-white-tb {
   @apply border-offWhiteText  border-t border-b;
@@ -15,5 +15,20 @@
   @apply font-JosefinSans text-xl font-normal;
 }
 .para {
-  @apply font-JosefinSans text-xl font-normal;
+  @apply font-JosefinSans text-sm lg:text-xl font-normal;
+}
+
+.reservation {
+  background-image: url('images/FooterBackground.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 900px;
+}
+.testimonial {
+  background-image: url('images/testimonial.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
 }
