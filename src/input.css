@@ -32,3 +32,10 @@
   background-size: cover;
   height: 70vh;
 }
+
+.backgroundqualitytradition {
+  background-image: url('images/BackgroundQuality&Tradition.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
